@@ -1,0 +1,155 @@
+/* Estilização para o container do perfil */
+.profile-container {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s;
+    max-width: 100%;
+}
+
+/* Efeito de sombra suave ao passar o mouse */
+.profile-container:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilização para o cabeçalho do perfil */
+.profile-heading {
+    color: #333;
+    justify-content: space-between;
+    display: flex;
+    margin: 0px 80px 8px 80px;
+    font-size: 48px;
+
+}
+
+/* Estilização para as colunas do perfil */
+.profile-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+/* Estilização para cada detalhe do perfil */
+.profile-detail {
+    background-color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+    transition: box-shadow 0.5s;
+    width: 280px;
+    height: 60px;
+
+}
+
+.profile-detail:hover {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Estilização para o rótulo do detalhe do perfil */
+.profile-detail-label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+/* Estilização para o valor do detalhe do perfil */
+.profile-detail-value {
+    color: #555;
+}
+
+/* Estilização para a classe de classificação do perfil */
+.classificacao-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilização para o ícone de classificação */
+
+
+.info-icon,
+.classificacao-icon {
+    display: flex;
+    margin: -14px 0 0 20px;
+    position: absolute;
+    color: #007bff;
+    cursor: pointer;
+    display: flex;
+}
+
+.sexo-idade-icon {
+    display: flex;
+    position: absolute;
+    font-size: 36px;
+    margin: -46px 0 0 228px;
+}
+
+.tooltip {
+    font-size: 12px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+.muito-abaixo-,
+.obesidade-grau-3 {
+    color: red;
+}
+
+.obesidade-grau-1,
+.obesidade-grau-2 {
+    color: #FF5733;
+}
+
+.abaixo-peso,
+.acima-peso {
+    color: orange;
+}
+
+.peso-normal {
+    color: green;
+}
+
+@media (max-width: 480px) {
+    .profile-columns {
+        grid-template-columns: 1fr;
+        
+    }
+
+    .profile-heading {
+        font-size: 36px;
+        justify-content: space-between;
+        margin: 0 40px 16px 40px;
+    }
+
+    .profile-detail {
+        font-size: 20px;
+        height: 50px;
+    }
+
+    .classificacao-text {
+        font-size: 18px;
+        
+    }
+
+    .info-icon,
+    .classificacao-icon {
+        display: flex;
+        margin: -12px 0 0 20px;
+        position: absolute;
+        font-size: 20px;
+    }
+
+    .sexo-idade-icon {
+        display: flex;
+        position: absolute;
+        font-size: 36px;
+        margin: -44px 0 0 228px;
+    }
+
+}

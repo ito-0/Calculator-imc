@@ -1,0 +1,93 @@
+.calculator-container {
+    text-align: center;
+    width: 300px; 
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: #000000;
+}
+
+.calculator-heading {
+    margin-bottom: 8px;
+
+}
+
+.label-calc {
+    font-size: 24px;
+}
+
+input[type="number"],
+select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #f2f2f2;
+    margin-bottom: 16px;
+    height: 64px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type="number"]:focus,
+select:focus {
+    border-color: #007bff;
+}
+
+.info-icon {
+    color: #007bff;
+    cursor: pointer;
+    display: flex;
+    margin: 52px 0 0 10px;
+    position: absolute;
+}
+
+.calculate-button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+.calculate-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.tooltip {
+    position: absolute;
+    display: flex;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    border: 4px solid rgba(0, 0, 0, 0.4);
+    margin-top: -36px;
+    font-size: 14px;
+}
+
+@media (max-width: 480px) {
+    .calculator-heading {
+        font-size: 28px; /* Reduzir fonte para telas pequenas */
+    }
+
+    /* Ajustar o tamanho do ícone de informação para telas pequenas */
+    .info-icon {
+        font-size: 18px;
+        margin: 50px 0 0 10px;
+    }
+
+    /* Ajustar tamanho do botão de cálculo para telas pequenas */
+    .calculate-button {
+        font-size: 20px;
+    }
+}
